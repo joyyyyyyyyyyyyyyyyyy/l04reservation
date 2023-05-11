@@ -35,11 +35,13 @@ public class MainActivity extends AppCompatActivity {
         smoking = findViewById(R.id.toggleButton);
         submit = findViewById(R.id.btnsubmit);
         reset = findViewById(R.id.btnreset);
-        
+
         submit.setOnClickListener(v -> {
-            String msg = String.format("You have successfully booked a reservation!\n Name; %s\n Contact Number: %s\n " +
-                    "Total Pax No: %s\n Seating Area: %s\n Date: %s\n Time %s",
-                    name, mobile, paxno, smoking, datepicker, timepicker);
+            String msg = String.format("You have successfully booked a reservation!\n Name: %s\n Contact Number: %s\n " +
+                            "Total Pax No: %s\n Seating Area: %s\n Date: %d/%d/%d\n Time: %d:%d",
+                    name.getText().toString(), mobile.getText().toString(), paxno.getText().toString(),
+                    smoking.isChecked() ? "Smoking" : "Non-smoking", datepicker.getYear(), datepicker.getMonth() + 1,
+                    datepicker.getDayOfMonth(), timepicker.getHour(), timepicker.getMinute());
             Toast.makeText(MainActivity.this, msg, Toast.LENGTH_LONG).show();
         });
 
