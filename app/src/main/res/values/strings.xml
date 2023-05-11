@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">l04reservation</string>
+    <string name="cafename">- TWENTY EIGHT CAFE -</string>
+    <string name="reservation">- Reservation App -</string>
+    <string name="name">Name: </string>
+    <string name="mobile">Number: </string>
+    <string name="paxno">Pax No: </string>
+    <string name="date">Date of Reservation: </string>
+    <string name="time">Time of Reservation: </string>
+    <string name="seat">Seating: </string>
+    <string name="smoke">Smoking</string>
+    <string name="nonsmoke">Non-Smoking</string>
+    <string name="submit">Submit</string>
+    <string name="reset">Reset</string>
+</resources>
